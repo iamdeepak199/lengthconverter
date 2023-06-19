@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>Length Converter</title>
+<head>
+    <style>
+    h2 {text-align: center;}
+    p {text-align: center;}
+    
+    </style>
+    </head>
+<body style="background-color: lightgray;">
+<br><br><br><br><br><br><br><br><br><br>
+<h2 style="color:Tomato;">Length Converter</h2>
+<p>Type a value in the Feet field to convert the value to Inches,Meters,Kiloimeter,centimeters,Miles:</p>
+
+<p>
+  <label>Feet To Inches:</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Inches: <span id="outputInches"></span></p>
+
+<p>
+<label>Feet To Meters:</label>
+<input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverte(this.value)" onchange="LengthConverte(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+<p>
+<label>Feet To Cm:</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConvert(this.value)" onchange="LengthConvert(this.value)">
+</p>
+<p>cm: <span id="outputcm"></span></p>
+<p>
+<label>Feet To Km:</label>
+<input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConver(this.value)" onchange="LengthConver(this.value)">
+</p>
+<p>Kilometers: <span id="outputKilometers"></span></p>
+<p>
+<label>Feet To Miles:</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConve(this.value)" onchange="LengthConve(this.value)">
+</p>
+<p>Miles: <span id="outputMiles"></span></p>
+
+
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputInches").innerHTML=valNum*12;
+}
+function LengthConverte(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+}
+function LengthConvert(valNum) {
+  document.getElementById("outputcm").innerHTML=valNum/0.032808;
+}
+function LengthConver(valNum) {
+  document.getElementById("outputKilometers").innerHTML=valNum/3280.8;
+}
+function LengthConve(valNum) {
+  document.getElementById("outputMiles").innerHTML=valNum*0.00018939;
+}
+
+</script>
+</body>
+</html>
